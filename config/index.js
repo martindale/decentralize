@@ -6,8 +6,8 @@ module.exports = {
   },
   service: {
     name: 'DECENTRALIZE',
-    authority: 'localhost:9201',
-    proto: 'http',
+    authority: 'decentralize.fm',
+    proto: 'https',
     namespace: 'decentralize',
     mission: 'the podcast',
     description: 'The best place for learning about what\'s going on with the latest decentralized tech.',
