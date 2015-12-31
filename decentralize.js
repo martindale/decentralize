@@ -6,7 +6,7 @@ var procure = require('procure');
 var Maki = require('maki');
 var Soundcloud = require('./lib/Soundcloud');
 var Engine = require('./lib/Engine');
-var Remote = require('./lib/Remote');
+var Remote = require('maki-remote');
 var WebSocket = require('ws');
 
 var jsonpatch = require('fast-json-patch');
@@ -173,7 +173,7 @@ procure( source.base + '/shows/decentralize' , function(err, show) {
     var engine = new Engine( config , decentralize );
 
     setInterval(function() {
-      engine.sync();
+      //engine.sync();
     }, /*/ 2500 /*/ 1 * 3600 * 1000 /**/ );
 
     engine.subscribe();
